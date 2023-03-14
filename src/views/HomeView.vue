@@ -10,7 +10,6 @@
   </router-link> 
    <div class="p-3">
     <h3 class="font-bold">{{meal.strMeal}}</h3>
- <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ea!</p>
  <div class="flex items-center justify-between">
   <youTubeButton :href="meal.strYoutube">Youtube</youTubeButton>
   
@@ -26,7 +25,7 @@
 <script setup>
 // @ is an alias to /src
 import youTubeButton from "@/components/youTubeButton.vue"
-import { onMounted, ref } from "vue"
+import {  onMounted, ref } from "vue"
 // import { computed } from "vue"
 // import store from "@/store"
 import axiosClient from "@/axiosClient"  
@@ -35,6 +34,7 @@ import axiosClient from "@/axiosClient"
   for (let i = 0; i < 10; i++) {
  axiosClient.get(`random.php`).then(({data}) => meals.value.push(data.meals[0]))
   }
- })
+ });
+ 
 
 </script>

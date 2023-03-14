@@ -13,7 +13,6 @@
   </router-link> 
    <div class="p-3">
     <h3 class="font-bold">{{meal.strMeal}}</h3>
- <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ea!</p>
  <div class="flex items-center justify-between">
   <youTubeButton :href="meal.strYoutube">Youtube</youTubeButton>
   
