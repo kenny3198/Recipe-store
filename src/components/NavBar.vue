@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white shadow-md h-16 flex justify-between items-stretch">
-         <router-link :to="{name: 'home'}" class="inline-flex px-2 text-center text-3xl items-center p-8 pb-0 text-orange-500">
-          <img src="../assets/home-icons.png" alt="" class="inline-flex mb-3 bg-red">
+         <router-link :to="{name: 'home'}" class="inline-flex px-2 text-center text-2xl items-center p-8 pb-0 text-orange-500">
+          <img src="../assets/home-icons.png" alt="" class="mb-3 ">
           <p>Home</p>
          </router-link>
          <div class="flex items-center gap-1">
@@ -25,5 +25,7 @@ export default {
 </script>
 
 <style>
-
+img{
+  color: grey;
+}
 </style>
