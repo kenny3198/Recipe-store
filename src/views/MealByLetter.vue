@@ -1,5 +1,5 @@
 <template>
-      <div class="gap-1 flex justify-center mt-2 gap-2">
+      <div class="gap-3 flex justify-center mt-2 gap-2">
     <router-link :to="{ name: 'byLetter', params: {letter} }" :key="letter" v-for="letter in letters">
        {{ letter }}
     </router-link>
