@@ -30,6 +30,7 @@ import {  onMounted, ref } from "vue"
 // import store from "@/store"
 import axiosClient from "@/axiosClient"  
  const meals = ref([])
+
  onMounted(() => {
   for (let i = 0; i < 10; i++) {
  axiosClient.get(`random.php`).then(({data}) => meals.value.push(data.meals[0]))
